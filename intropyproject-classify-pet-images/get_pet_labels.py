@@ -49,7 +49,7 @@ def get_pet_labels(image_dir):
                 break
             elif filter(str.isalpha, word):
                 label += word + ' '
-        # chomp last space
-        results_dic[file_name] = label.strip()
+        # chomp last space and make it list
+        results_dic[file_name] = [label.strip()]
 
     return results_dic
