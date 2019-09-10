@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/classify_images.py
 #                                                                             
-# PROGRAMMER: 
-# DATE CREATED:                                 
+# PROGRAMMER: Zhecho Zhechev
+# DATE CREATED: 2019-09-10T10:18:17+03:00                                                               
 # REVISED DATE: 
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
@@ -12,12 +12,13 @@
 #             and as in_arg.dir for function call within main. 
 #            -The results dictionary as results_dic within classify_images 
 #             function and results for the functin call within main.
-#            -The CNN model architecture as model within classify_images function
-#             and in_arg.arch for the function call within main. 
+#            -The CNN model architecture as model within classify_images
+#            function and in_arg.arch for the function call within main. 
 #           This function uses the extend function to add items to the list 
-#           that's the 'value' of the results dictionary. You will be adding the
-#           classifier label as the item at index 1 of the list and the comparison 
-#           of the pet and classifier labels as the item at index 2 of the list.
+#           that's the 'value' of the results dictionary. You will be adding
+#           the classifier label as the item at index 1 of the list and the
+#           comparison of the pet and classifier labels as the item at index 2
+#           of the list.
 #
 ##
 # Imports classifier function for using CNN to classify images 
@@ -37,18 +38,19 @@ def classify_images(images_dir, results_dic, model):
     format the classifier labels so that they will match your pet image labels.
     The format will include putting the classifier labels in all lower case 
     letters and strip the leading and trailing whitespace characters from them.
-    For example, the Classifier function returns = 'Maltese dog, Maltese terrier, Maltese' 
-    so the classifier label = 'maltese dog, maltese terrier, maltese'.
+    For example, the Classifier function returns = 'Maltese dog, Maltese
+    terrier, Maltese' so the classifier label = 'maltese dog, maltese terrier,
+    maltese'.
     Recall that dog names from the classifier function can be a string of dog 
     names separated by commas when a particular breed of dog has multiple dog 
     names associated with that breed. For example, you will find pet images of
     a 'dalmatian'(pet label) and it will match to the classifier label 
-    'dalmatian, coach dog, carriage dog' if the classifier function correctly 
+    'dalmatian, coach dog, carriage dog' if the classifier function correctly
     classified the pet images of dalmatians.
-     PLEASE NOTE: This function uses the classifier() function defined in 
-     classifier.py within this function. The proper use of this function is
-     in test_classifier.py Please refer to this program prior to using the 
-     classifier() function to classify images within this function 
+    PLEASE NOTE: This function uses the classifier() function defined in
+    classifier.py within this function. The proper use of this function is in
+    test_classifier.py Please refer to this program prior to using the
+    classifier() function to classify images within this function 
      Parameters: 
       images_dir - The (full) path to the folder of images that are to be
                    classified by the classifier function (string)
