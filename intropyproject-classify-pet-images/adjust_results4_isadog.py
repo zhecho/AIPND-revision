@@ -68,8 +68,17 @@ def adjust_results4_isadog(results_dic, dogfile):
            None - results_dic is mutable data type so no return needed.
     """
     dogs = list()
-    with open(dogfile, 'r') as fh:
-        dogs = fh.readlines()
+    with open('./dognames.txt') as fh:
+        dog = fh.readline()
+        line = 1
+        while dog:
+            if dog in dogs:
+                print(f'Warning: Repeated Dog Name: {dog.rstrip()} On Line {line}')
+            else:
+                # print(f'Adding Dog {dog.rstrip()} on line {line} to dict... ')
+                dogs.append(dog.rstrip())
+            line += 1
+            dog = fh.readline()
 
     for file_name, values in results_dic.items():
         # index 3 -- pet image 

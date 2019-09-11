@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # */AIPND-revision/intropyproject-classify-pet-images/check_images.py
 #
-# TODO 0: Add your information below for Programmer & Date Created.                                                                             
 # PROGRAMMER: Zhecho Zhechev
 # DATE CREATED: 2019-09-10T10:23:32+03:00
 # REVISED DATE: 
@@ -95,12 +94,13 @@ def main():
     check_classifying_labels_as_dogs(results)
 
 
-    # TODO 5: Define calculates_results_stats function within the file calculates_results_stats.py
-    # This function creates the results statistics dictionary that contains a
-    # summary of the results statistics (this includes counts & percentages). This
-    # dictionary is returned from the function call as the variable results_stats    
-    # Calculates results of run and puts statistics in the Results Statistics
-    # Dictionary - called results_stats
+    # TODO 5: Define calculates_results_stats function within the file
+    # calculates_results_stats.py This function creates the results statistics
+    # dictionary that contains a summary of the results statistics (this
+    # includes counts & percentages). This dictionary is returned from the
+    # function call as the variable results_stats    Calculates results of run
+    # and puts statistics in the Results Statistics Dictionary - called
+    # results_stats
     results_stats = calculates_results_stats(results)
 
     # Function that checks Results Statistics Dictionary using results_stats
