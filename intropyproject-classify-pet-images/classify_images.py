@@ -74,7 +74,7 @@ def classify_images(images_dir, results_dic, model):
         # Append classification label to list of values
         values.append(image_classification_label)
         # Append match between classifier label and pet image label
-        if image_classification_label in values[0]:
+        if values[0] in image_classification_label:
             values.append(1)
         else:
             values.append(0)
