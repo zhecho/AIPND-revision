@@ -70,7 +70,8 @@ def classify_images(images_dir, results_dic, model):
     full_path = abspath(images_dir)
     for file_name, values in results_dic.items():
         file_name = full_path + "/" + file_name
-        image_classification_label = classifier(file_name, model).lower()
+        image_classification_label = classifier(file_name,
+                model).lower().strip()
         # Append classification label to list of values
         values.append(image_classification_label)
         # Append match between classifier label and pet image label

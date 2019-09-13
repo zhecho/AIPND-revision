@@ -68,7 +68,7 @@ def adjust_results4_isadog(results_dic, dogfile):
            None - results_dic is mutable data type so no return needed.
     """
     dogs = list()
-    with open('./dognames.txt') as fh:
+    with open(dogfile) as fh:
         dog = fh.readline()
         line = 1
         while dog:
